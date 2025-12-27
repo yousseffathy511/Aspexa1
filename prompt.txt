@@ -1,0 +1,1090 @@
+# **COMPREHENSIVE WEBSITE CREATION PROMPT FOR ASPEXA**
+
+---
+
+## **PROJECT BRIEF**
+
+You are tasked with building a complete professional website for **ASPEXA**, an AI red-teaming and adversarial testing company specializing in Arabic dialect security assessments for the MENA region.
+
+**Design Philosophy:** Clean, minimalist, professional cybersecurity aesthetic. No floating elements, no excessive animations, no hover effects. Brutalist professionalism.
+
+---
+
+## **BRAND IDENTITY**
+
+**Company Name:** ASPEXA
+
+**Mission:** Red-team AI systems in Arabic dialects and regional contexts that global security firms ignore. Provide working exploits, not just vulnerability lists. Map findings to GCC compliance frameworks.
+
+**Core Values:**
+- Technical depth over marketing
+- Regional expertise (MENA-native)
+- Proof-based findings (reproducible exploits)
+- Regulatory alignment (UAE PDPL, SAMA, Saudi NDAL)
+- Arabic dialect specialization
+
+**Tone of Voice:**
+- Professional with charisma ("karezma")
+- Direct and honest (no buzzwords)
+- Technical but accessible
+- Confident without arrogance
+- Never repeat claims across pages
+
+---
+
+## **COLOR PALETTE**
+
+- **Primary Black:** #000000
+- **Accent Red:** #EC0000
+- **Light Gray/Off-White:** #F8F8F8
+- **Pure White:** #FFFFFF
+- **Text Dark:** #1A1A1A (for readability on light backgrounds)
+- **Text Light:** #CCCCCC (for secondary text on dark backgrounds)
+
+**Usage:**
+- Background: #000000 (primary)
+- Accent elements & CTAs: #EC0000
+- Card backgrounds & highlights: #F8F8F8
+- Text on dark: White or #CCCCCC
+- Text on light: #000000 or #1A1A1A
+
+---
+
+## **TYPOGRAPHY**
+
+- **Headlines:** Sans-serif, bold, uppercase for major sections (consider: Inter, Helvetica, Roboto)
+- **Body Text:** Sans-serif, regular weight, 16px minimum
+- **CTAs:** Bold, uppercase
+- **Code/Technical:** Monospace for any code snippets
+
+**No custom fonts** unless necessary. Use system fonts or common web-safe fonts.
+
+---
+
+## **DESIGN PRINCIPLES**
+
+1. **Minimalist Layout:** Maximum whitespace. Content breathes.
+2. **No Hover Effects:** Buttons change color on hover only. No floating, scaling, or shadow effects.
+3. **Clear Typography Hierarchy:** Headers > Subheaders > Body > Small text
+4. **Consistent Spacing:** Grid-based layout (8px or 16px baseline)
+5. **Brutalist Borders:** Subtle borders where needed. No rounded corners (or minimal 2-4px only).
+6. **Professional Imagery:** Photography only—no illustration, no gradients, no abstract art.
+7. **Section Separation:** Use color blocks and whitespace, not divider lines.
+8. **Direct Call-to-Action:** Every section has a clear CTA button (red on dark, dark on light).
+
+---
+
+## **PAGES REQUIRED**
+
+1. **Homepage**
+2. **About Us**
+3. **Services**
+4. **Methodology** (optional: can be subsection of Services)
+5. **Team**
+6. **Contact Us**
+7. **Pricing** (if available; otherwise, "Contact for pricing" strategy)
+8. **Blog/Insights** (optional; can launch post-launch)
+9. **FAQ**
+10. **Privacy Policy** (required)
+11. **Terms of Service** (required)
+
+---
+
+## **PAGE SPECIFICATIONS**
+
+---
+
+### **PAGE 1: HOMEPAGE**
+
+**Sections in order:**
+
+#### **1. Navigation Bar (Fixed or Sticky)**
+- Logo on left (ASPEXA red logo)
+- Menu items: Home | Services | Team | About | Contact
+- "Contact Us" button (red background, white text) on right
+- Mobile hamburger menu
+
+#### **2. Hero Section**
+**Headline:**
+```
+Advanced AI Red-Teaming
+```
+
+**Subheading:**
+```
+Your AI systems operate with vulnerabilities you haven't identified yet. 
+We conduct adversarial testing designed to expose them—prompt injection, 
+jailbreaks, RAG poisoning, unauthorized tool execution. Our assessment 
+covers Arabic dialects and regional compliance frameworks. You receive 
+reproducible exploits, clear evidence, and actionable remediation guidance 
+your team can implement immediately.
+
+We've conducted red-team assessments across MENA's critical sectors—banking, 
+government, fintech, telecommunications, and energy. Our findings have prevented 
+regulatory violations, protected customer data, and mitigated risk before 
+vulnerabilities could be weaponized.
+```
+
+**CTA Button:** "Contact Us" (red, white text)
+
+**Background:** Dark (#000000) with professional image (optional)
+
+---
+
+#### **3. Stats Section (4 Cards)**
+
+Three-column layout on desktop, stacked on mobile.
+
+**Card 1:**
+- Stat: "50+"
+- Label: "Red-Team Assessments"
+
+**Card 2:**
+- Stat: "15+"
+- Label: "MENA Industries Covered"
+
+**Card 3:**
+- Stat: "100%"
+- Label: "Actionable Findings"
+
+**Card 4:**
+- Stat: "8"
+- Label: "Security Specialists"
+
+**Style:** Dark background, white text, light gray borders
+
+---
+
+#### **4. Three-Column Service Cards**
+
+**Card 1: Red-Team Your AI**
+```
+Headline: Red-Team Your AI
+
+Content: We conduct controlled adversarial testing against your LLM 
+systems. Prompt injections, data exfiltration attempts, jailbreaks in 
+Arabic dialects. Our testing identifies vulnerabilities before attackers do. 
+You get working exploits, attack scripts, and clear remediation guidance.
+
+CTA: Find Vulnerabilities →
+```
+
+**Card 2: Pass Your Audit**
+```
+Headline: Pass Your Audit
+
+Content: Compliance requires more than vulnerability lists. We map all 
+findings to OWASP, MITRE ATLAS, UAE PDPL, and SAMA guidelines. Reports 
+structured for board presentation and regulatory review. Everything your 
+organization needs to demonstrate security maturity.
+
+CTA: Get Audit-Ready →
+```
+
+**Card 3: Fix It Properly**
+```
+Headline: Fix It Properly
+
+Content: Each finding includes a remediation plan. Step-by-step fixes, 
+code examples, priority levels, and implementation guidance. Your 
+engineering team has everything needed to address vulnerabilities immediately.
+
+CTA: Get Remediation Guide →
+```
+
+**Style:** Three columns on desktop, stacked on mobile. Light gray backgrounds (#F8F8F8), dark text, subtle borders.
+
+---
+
+#### **5. "Why Choose Us" Section**
+
+**Headline:** Why Teams Choose ASPEXA
+
+**Subheading:** We solve problems no one else is even looking at yet.
+
+**Three Cards:**
+
+**Card 1: Engineering-First Approach**
+- Icon: Circuit board or technical diagram
+- Title: Engineering-First Approach
+- Content: We're not consultants offering generic frameworks. We're engineers who've built the attack pipeline from scratch. Every finding includes exploit code, not just descriptions. Your team gets working proof they can test and defend against.
+- Link: "See Our Technical Stack" →
+
+**Card 2: Arabic-Native Threat Intelligence**
+- Icon: Arabic text or globe
+- Title: Arabic-Native Threat Intelligence
+- Content: Khaleeji, Egyptian, Levantine—each dialect has different tokenization weaknesses that English-only security teams can't see. We test in your users' actual languages. Compliance violations happen in the dialects global firms skip.
+- Link: "Explore Dialect Testing" →
+
+**Card 3: MENA Compliance Built In**
+- Icon: Document or compliance
+- Title: MENA Compliance Built In
+- Content: Every finding maps to UAE PDPL, SAMA guidelines, and Saudi NDAL. No translation layer. No "we think this violates X regulation." We provide the exact regulatory reference so your legal team moves fast.
+- Link: "View Compliance Mappings" →
+
+**Style:** Dark background, three columns, white text with red accents.
+
+---
+
+#### **6. Methodology Overview**
+
+**Headline:** The Eight-Step Assault Architecture
+
+**Subheading:** We don't scan. We orchestrate.
+
+**8 Steps (Headlines only, no descriptions):**
+
+1. Passive Mapping
+2. Infrastructure Fingerprinting
+3. Vulnerability Detection
+4. Finding Clustering
+5. Attack Strategy Design
+6. Payload Customization
+7. Live Exploitation
+8. Human Authorization Gate
+
+**Style:** Vertical timeline or numbered list on dark background.
+
+---
+
+#### **7. Newsletter Subscription**
+
+**Headline:** Subscribe To Our Newsletter
+
+**Subheading:** Stay updated on the latest AI security threats, red-teaming research, and compliance updates for MENA. Insights from our assessments, emerging attack patterns, and how to defend your systems.
+
+**Input Field:** Email address with placeholder "Enter your email"
+
+**Button:** "Subscribe" (red)
+
+**Optional Checklist:**
+- Monthly threat intelligence roundup
+- Regional compliance updates (UAE, KSA, GCC)
+- Red-teaming case studies
+- Arabic dialect attack patterns
+- Industry insights from assessments
+
+**Style:** Dark background, centered layout, professional copy.
+
+---
+
+#### **8. Footer**
+
+**Columns:**
+
+**Column 1: About**
+- Logo
+- Brief tagline: "AI Security. Arabic Native. MENA Focused."
+- Social media icons (LinkedIn, Twitter, etc. if available)
+
+**Column 2: Services**
+- AI Red-Teaming Audit
+- RAG Security Assessment
+- Arabic Dialect Testing
+- Compliance & Regulatory Assurance
+- Incident Readiness Workshop
+
+**Column 3: Company**
+- About Us
+- Team
+- Contact
+- Pricing
+- Blog
+
+**Column 4: Legal**
+- Privacy Policy
+- Terms of Service
+- Cookies
+
+**Column 5: Contact**
+- Email: contact@aspexa.ai (or your preferred email)
+- Phone: +971 (0) [your number]
+- Location: UAE (Primary), KSA, MENA
+
+**Bottom Line:** Copyright © 2025 ASPEXA. All rights reserved.
+
+**Style:** Dark background, light text, organized grid layout.
+
+---
+
+### **PAGE 2: ABOUT US**
+
+#### **1. Page Header**
+**Headline:**
+```
+Built For A Different Threat Landscape
+```
+
+**Subheading:**
+```
+While global security firms optimize for English and Western threat models, 
+we've engineered something purpose-built for MENA. A team that thinks in 
+Arabic dialects, understands regional regulation, and specializes in the 
+specific vulnerabilities that other firms miss.
+```
+
+---
+
+#### **2. Mission & Philosophy Section**
+
+**Headline:** What Drives Us
+
+**Paragraph 1:**
+```
+Most AI security stops at the model. We start there and follow the 
+exploitation chain—through the API, into the database, across your agent 
+orchestration. We think like someone trying to break your system, not 
+someone trying to sell you a product.
+```
+
+**Paragraph 2:**
+```
+The Middle East is adopting AI faster than most regions. Banking, government, 
+healthcare—all deploying LLMs at scale. And they're deploying them in Arabic, 
+with Arabic users, processing Arabic data. Yet 99% of security research is in 
+English. That gap is what we close.
+```
+
+**CTA:** "Start An Assessment"
+
+---
+
+#### **3. Team Section**
+
+**Headline:** Our Expert Team
+
+**Subheading:**
+```
+Red-teamers, Arabic linguists, and offensive engineers specializing in AI 
+security. Distributed across MENA, building adversarial testing methodology 
+that global firms can't replicate.
+```
+
+**10 Team Member Cards (Grid Layout - 5 per row on desktop, 2 per row on tablet, 1 per row on mobile):**
+
+Each card contains:
+- **Placeholder Image** (Professional headshot - 250x250px or square)
+- **Name** (Bold, large text)
+- **Role/Title** (Smaller text, red color)
+- **LinkedIn Icon** (Clickable link to LinkedIn profile)
+
+**Team Members:**
+
+1. **Baraa Al Refai**
+   - Role: Co-Founder & Chief Executive Officer (CEO)
+   - LinkedIn: [clickable icon with link]
+
+2. **Abdulrahman Ali**
+   - Role: Co-Founder & Chief Technology Officer (CTO)
+   - LinkedIn: [clickable icon with link]
+
+3. **Hamza Khaled**
+   - Role: Co-Founder & Chief AI Operations Officer (CAIO) / AI Testing Lead
+   - LinkedIn: [clickable icon with link]
+
+4. **Soultan Toure**
+   - Role: AI Research & Testing Lead
+   - LinkedIn: [clickable icon with link]
+
+5. **Yasser**
+   - Role: Senior Red Team & AI Tester
+   - LinkedIn: [clickable icon with link]
+
+6. **Mooad Ali**
+   - Role: Senior Red Team & AI Tester
+   - LinkedIn: [clickable icon with link]
+
+7. **Abdullah Othman**
+   - Role: Chief Financial Officer (CFO)
+   - LinkedIn: [clickable icon with link]
+
+8. **Youssef Fathy**
+   - Role: Chief Partnerships Officer (CPO)
+   - LinkedIn: [clickable icon with link]
+
+9. **Kawsar**
+   - Role: Technical Research Lead
+   - LinkedIn: [clickable icon with link]
+
+10. **Osama**
+    - Role: Quality Assurance & Compliance Lead
+    - LinkedIn: [clickable icon with link]
+
+**Card Style:** Light gray background (#F8F8F8), center-aligned, border on hover (no floating effect).
+
+---
+
+#### **4. How We're Different Section**
+
+**Headline:** Why We're Different
+
+**Three-Column Comparison:**
+
+| **Global Cybersecurity Firms** | **AI Safety Research** | **ASPEXA** |
+|---|---|---|
+| Test in English only | Academic focus | Arabic dialects + English |
+| Deliver reports, not code | Theoretical vulnerabilities | Exploit code + working POC |
+| Generic frameworks | No implementation guidance | Pipeline-specific methodology |
+| "Best practices" | For Ph.D.s, not engineers | For teams that need to fix it today |
+
+**Style:** Dark background, light text, organized table or three-column grid.
+
+---
+
+#### **5. Methodology Deep-Dive**
+
+**Headline:** The Eight-Step Assault Architecture
+
+**Subheading:** We don't scan. We orchestrate.
+
+**8 Steps (with brief descriptions):**
+
+1. **Passive Mapping** - Maps your AI's surface. Tools, authentication, infrastructure, system role. We gather intelligence without triggering alarms.
+
+2. **Infrastructure Fingerprinting** - Identifies the tech stack powering your AI (vector databases, embedding models, LLM family, orchestration frameworks).
+
+3. **Vulnerability Detection** - 1000+ targeted probes in parallel. SQL injection, jailbreaks, RAG poisoning. We find the cracks.
+
+4. **Finding Clustering** - Raw results become organized intelligence. Duplicate findings eliminated, patterns identified, severity assigned.
+
+5. **Attack Strategy Design** - Intelligence becomes attack plans. Each vulnerability gets a custom exploitation strategy tuned to your system's specific behavior.
+
+6. **Payload Customization** - Generic attack templates become context-specific. Tone adaptation, cultural framing, dialect optimization.
+
+7. **Live Exploitation** - Real, reproducible exploits. Multi-turn attack chains that prove the vulnerability works. You get video-game-level proof.
+
+8. **Human Authorization Gate** - We don't execute without your explicit permission. Safety by design.
+
+**Style:** Vertical timeline or numbered list, dark background, progressive disclosure (click to expand each step if desired).
+
+---
+
+#### **6. Compliance & Regulatory Section**
+
+**Headline:** Built For MENA. Mapped To Your Regulations.
+
+**Subheading:** Every finding is aligned with UAE AI Principles, SAMA AI Guidelines, Saudi NDAL Framework, and UAE PDPL. No translation needed between technical findings and regulatory requirements.
+
+**Three-Column Grid:**
+
+**Column 1: UAE & GCC Standards**
+- ✓ UAE AI Principles (Responsibility, Transparency, Fairness)
+- ✓ SAMA AI Risk Management Guidelines (Saudi Arabia)
+- ✓ UAE Personal Data Protection Law (PDPL)
+- ✓ Dubai Financial Services Authority (DFSA) AI Standards
+
+**Column 2: International Alignment**
+- ✓ OWASP LLM Top 10
+- ✓ MITRE ATLAS (AI Security Framework)
+- ✓ NIST AI Risk Management Framework
+- ✓ ISO/IEC 42001 (AI Management Systems)
+
+**Column 3: How We Map Findings**
+- Every vulnerability is documented with:
+  - → The specific regulation it violates
+  - → The risk level under MENA frameworks
+  - → Required remediation steps per local requirements
+  - → Evidence for auditors and regulators
+
+**Style:** Dark background, three columns, light text with red accents.
+
+---
+
+#### **7. Call-to-Action Section**
+
+**Headline:** Ready to Assess Your AI?
+
+**CTA Button:** "Contact Us" (red, white text)
+
+**Secondary Link:** "Schedule a Call" (outlined, red text)
+
+---
+
+### **PAGE 3: SERVICES**
+
+#### **1. Page Header**
+**Headline:**
+```
+Comprehensive AI Security Testing
+```
+
+**Subheading:**
+```
+From red-team assessments to compliance validation, we cover the full 
+attack surface of your generative AI infrastructure.
+```
+
+---
+
+#### **2. Service Cards (Six Services)**
+
+Each service card includes:
+- **Service Icon**
+- **Service Name**
+- **Brief Description**
+- **Test Coverage (Bullet Points)**
+- **Deliverables (Bullet Points)**
+- **Ideal For**
+- **Learn More** link
+
+**Service 1: AI Red-Teaming Audit (Flagship)**
+```
+Description: Adversarial testing of LLMs, chatbots, AI agents, and 
+autonomous systems.
+
+Test Coverage:
+- Prompt injection attacks (direct & indirect)
+- Multi-turn jailbreak sequences
+- RAG knowledge base poisoning and data exfiltration
+- Bias and cultural/religious bypass attempts in Arabic contexts
+- System prompt leakage and role-play manipulation
+- Excessive agency and unauthorized tool execution
+
+Deliverables:
+- Executive risk report with severity ratings
+- Technical proof-of-concepts and reproduction steps
+- Mitigation roadmap aligned with your timeline
+- MITRE ATLAS + OWASP LLM Top 10 mappings
+
+Ideal For: Banks, telecoms, government digital services, enterprise SaaS platforms
+```
+
+**Service 2: RAG-Specific Security Assessment**
+```
+Description: Retrieval-augmented generation systems (document Q&A, 
+enterprise knowledge bases, internal AI assistants).
+
+Test Coverage:
+- Knowledge base poisoning via malicious document injection
+- Indirect prompt injection through retrieval context
+- PII and confidential data exfiltration
+- Vector database manipulation and metadata exploitation
+- Retrieval ranking manipulation
+- Context overflow and context window attacks
+
+Deliverables:
+- RAG-specific vulnerability report
+- Database hardening recommendations
+- Data access control audit
+- Retrieval safety testing report
+
+Ideal For: Organizations using AI on internal documents—financial services, 
+healthcare, energy, legal, government ministries
+```
+
+**Service 3: Arabic Dialect Jailbreak Library & Testing**
+```
+Description: Proprietary adversarial prompt sets designed for MENA-specific 
+contexts.
+
+Test Coverage:
+- Gulf Arabic (Khaleeji) formal and colloquial bypasses
+- Saudi Najdi dialect exploits
+- Emirati code-switching and cultural triggers
+- Egyptian and Levantine Arabic attack vectors
+- North African (Moroccan, Algerian, Tunisian) dialect patterns
+- Religious/cultural phrasing to evade content filters
+- RTL/LTR encoding and Unicode manipulation
+
+Deliverables:
+- Benchmark report showing model vulnerability in Arabic across dialects
+- Proprietary attack template library (for ongoing testing)
+- Cultural sensitivity and compliance analysis
+- Recommendations for Arabic-aware safety filters
+
+Delivery Format: Available as audit add-on (included in all audits) 
+or standalone benchmark for comparative analysis
+
+Ideal For: Government services, banks, telecoms, and any organization 
+serving Arabic-speaking populations
+```
+
+**Service 4: AI Compliance & Regulatory Assurance Package**
+```
+Description: Translating technical findings into auditable, governance-ready 
+artifacts.
+
+Test Coverage & Outputs:
+- Red-team findings mapped to UAE AI Principles, SAMA AI Guidelines, 
+Saudi NDAL framework
+- Model Cards (per NIST standards)
+- Data Protection Impact Assessments (DPIA) aligned with UAE PDPL
+- AI Risk Registers with control recommendations
+- Executive risk briefs for board/regulator presentations
+- SAQ (Self-Assessment Questionnaire) completion support
+
+Ideal For: Public-sector tenders, regulated industries (banking, insurance, 
+healthcare), entities preparing for regulatory audits
+```
+
+**Service 5: AI Incident Readiness Workshop**
+```
+Description: Preparedness training for detection, response, and containment 
+of AI abuse in real-time.
+
+Format:
+- Tabletop exercises using real jailbreak scenarios in Arabic and English
+- Role-playing across teams: SOC, legal, product, communication
+- Live demonstration of attack/defense cycles
+- Custom incident playbooks for your industry and AI systems
+
+Deliverables:
+- Incident response playbook (customized to your environment)
+- Detection rules and monitoring guidance
+- Communication templates for regulators and customers
+- Team training certificate
+
+Ideal For: Enterprise security teams, government agencies, critical 
+infrastructure operators, any organization with production AI systems
+```
+
+**Service 6: Classical ML Security Assessment**
+```
+Description: Security testing for classical machine learning systems 
+(spam classifiers, fraud detectors, recommendation engines, malware scanners).
+
+Test Coverage:
+- Evasion attacks (FGSM, JSMA, adversarial perturbations)
+- Data poisoning and label manipulation
+- Model inversion and membership inference
+- Feature space manipulation
+- Supply chain vulnerabilities (model registries, dependencies)
+
+Deliverables:
+- Evasion vulnerability report
+- Robustness recommendations
+- Model hardening guidance
+
+Note: While primary focus is generative AI and LLM systems, we also test 
+classical ML models—particularly those integrated with AI pipelines or 
+deployed alongside generative components.
+
+Ideal For: Organizations with hybrid AI stacks (both classical ML + LLM 
+systems), recommendation platforms, financial risk models
+```
+
+**Card Style:** Light gray backgrounds (#F8F8F8), organized grid, expandable 
+sections if needed.
+
+---
+
+#### **3. Service Comparison Table**
+
+A simple table showing:
+- Service Name
+- Duration (e.g., 2-4 weeks)
+- Typical Price Range (if available; otherwise "Contact for pricing")
+- Best Suited For
+
+---
+
+#### **4. Call-to-Action**
+
+**Headline:** Ready To Secure Your AI?
+
+**CTA Button:** "Contact Us For A Custom Quote" (red)
+
+---
+
+### **PAGE 4: CONTACT US**
+
+#### **1. Page Header**
+**Headline:**
+```
+Contact Us
+```
+
+**Subheading:**
+```
+Ready to red-team your AI systems? Let's talk about securing your 
+generative AI infrastructure, RAG systems, and agents against real 
+adversarial attacks.
+```
+
+---
+
+#### **2. Contact Information Section**
+
+**Three-Column Layout:**
+
+**Column 1: Where We Are**
+- Icon: Location pin
+- Title: Where We Are
+- Content: United Arab Emirates (Primary)
+            Distributed team across Malaysia, Canada, KSA, and UAE
+
+**Column 2: Phone**
+- Icon: Phone icon
+- Title: Phone
+- Content: +971 (0) 4 [your number] (replace with actual)
+
+**Column 3: Email**
+- Icon: Email icon
+- Title: Email
+- Content: contact@aspexa.ai (or your preferred email)
+
+**Style:** Dark background, three columns, centered text.
+
+---
+
+#### **3. Contact Form**
+
+**Headline:** Get In Touch With Our Team
+
+**Subheading:** Have questions about our red-teaming methodology, pricing, 
+or assessment timeline? Share your details below, and our team will respond 
+within 24 hours.
+
+**Form Fields:**
+- Name (required)
+- Email (required)
+- Company (optional)
+- Phone (optional)
+- Subject (dropdown: "Red-Team Audit" | "RAG Assessment" | "Compliance Help" 
+| "Pricing" | "Other")
+- Message (textarea, required)
+- Checkbox: "I agree to the privacy policy"
+- Submit Button: "Send Message" (red)
+
+**Form Style:** Clean, minimal, dark background, white input fields with 
+dark text.
+
+---
+
+#### **4. FAQ Section (Inline)**
+
+**Heading:** Frequently Asked Questions
+
+**10 Q&A Pairs (Expandable/Accordion):**
+
+**Q1: What Is Prompt Injection And Why Should I Care?**
+```
+A: Prompt injection is when an attacker manipulates your AI system through 
+text input to override its safety guidelines, extract confidential information, 
+or execute unauthorized actions. Unlike traditional code injection, prompt 
+injection doesn't require exploiting infrastructure flaws—it exploits the AI 
+model itself. If your system handles sensitive data, processes transactions, 
+or makes decisions, you're at risk. We test for 15+ prompt injection variants 
+specific to your use case.
+```
+
+**Q2: How Long Does A Red-Team Assessment Take?**
+```
+A: Standard assessments run 2-4 weeks depending on system complexity. Phase 1 
+(reconnaissance) is fastest; Phase 4 (exploitation) is most thorough. We provide 
+interim findings so your team can begin remediation while we continue testing. 
+Rush engagements available for critical systems—typically 1-2 weeks.
+```
+
+**Q3: What Languages And Dialects Do You Test?**
+```
+A: We conduct adversarial testing in Khaleeji (Gulf Arabic), Egyptian, 
+Levantine, and Maghrebi Arabic—plus Modern Standard Arabic. Most security 
+firms test only in English. If your system serves Arabic-speaking users, 
+dialect-specific vulnerabilities are critical to identify. This is our 
+core differentiator.
+```
+
+**Q4: How Are Findings Reported For Compliance?**
+```
+A: Each finding is mapped to OWASP LLM Top 10, MITRE ATLAS, UAE PDPL, and 
+SAMA guidelines. Reports include executive summaries for boards, technical 
+details for engineers, and regulatory documentation for auditors. All mapped 
+to industry standards so there's no translation needed.
+```
+
+**Q5: What's The Difference Between Scanning And Exploitation Testing?**
+```
+A: Scanning identifies potential vulnerabilities through automated probes. 
+Exploitation proves the vulnerability is real by executing a working attack 
+and capturing evidence. We do both—scanning finds cracks; exploitation proves 
+they matter. You get reproducible proof, not just a list of maybes.
+```
+
+**Q6: Can You Test Systems Still In Development?**
+```
+A: Yes. Early-stage testing prevents vulnerabilities from being baked into 
+production. We offer pre-deployment assessments, staging environment testing, 
+and continuous red-teaming during development cycles. Finding issues before 
+launch is always cheaper than fixing them in production.
+```
+
+**Q7: How Is Our Data Stored And Protected?**
+```
+A: All assessment data is encrypted and stored in isolated environments 
+accessible only to your dedicated team. Raw findings are destroyed within 
+72 hours of engagement completion via certified data destruction (we provide 
+a Certificate of Destruction). Your test payloads and responses are never 
+retained beyond the engagement period. Everything is confidential under 
+strict NDA.
+```
+
+**Q8: What Happens If You Find Critical Vulnerabilities?**
+```
+A: We document everything with severity ratings, reproducible proof-of-concepts, 
+and step-by-step remediation guidance. You have full control over when and how 
+to address findings. We don't disclose anything to third parties—all findings 
+remain confidential under NDA.
+```
+
+**Q9: Do You Provide Remediation Guidance?**
+```
+A: Yes. Each finding includes step-by-step remediation steps, code examples, 
+implementation priority, and mitigation strategies. Your engineers get 
+everything they need—no back-and-forth or expensive consulting required.
+```
+
+**Q10: Are You Compliant With UAE PDPL, SAMA Guidelines, And GCC Regulations?**
+```
+A: Yes. Every finding is mapped to UAE PDPL, SAMA AI Guidelines, UAE AI 
+Principles, and Saudi NDAL framework. Reports include governance documentation, 
+compliance mappings, and executive summaries for regulatory review. We ensure 
+your assessment findings align with every framework your regulators care about.
+```
+
+**Style:** Accordion/expandable sections, dark background, light text.
+
+---
+
+### **PAGE 5: TEAM**
+
+#### **1. Page Header**
+**Headline:**
+```
+Our Expert Team
+```
+
+**Subheading:**
+```
+Red-teamers, Arabic linguists, and offensive engineers specializing in AI 
+security. Distributed across MENA, building adversarial testing methodology 
+that global firms can't replicate.
+```
+
+---
+
+#### **2. Full Team Member Cards**
+
+**Same 10 team members as About page, but with expanded layout:**
+
+Each card includes:
+- **Large Placeholder Image** (300x300px or larger)
+- **Name** (Bold, large)
+- **Role/Title** (Red color, smaller)
+- **Brief Bio** (2-3 sentences - optional, can be filled in later)
+- **LinkedIn Icon** (Clickable, links to LinkedIn)
+
+**Layout:** 2 columns on desktop, 1 column on mobile/tablet.
+
+**Team Members (Same as Before):**
+1. Baraa Al Refai - CEO
+2. Abdulrahman Ali - CTO
+3. Hamza Khaled - CAIO / AI Testing Lead
+4. Soultan Toure - AI Research & Testing Lead
+5. Yasser - Senior Red Team & AI Tester
+6. Mooad Ali - Senior Red Team & AI Tester
+7. Abdullah Othman - CFO
+8. Youssef Fathy - CPO
+9. Kawsar - Technical Research Lead
+10. Osama - QA & Compliance Lead
+
+---
+
+#### **3. Distributed Team Section**
+
+**Headline:** Distributed Across MENA
+
+**Subheading:** We operate across multiple regions, bringing local context 
+and global expertise to every assessment.
+
+**Location Cards:**
+- 🇦🇪 United Arab Emirates (Primary Hub)
+- 🇸🇦 Saudi Arabia
+- 🇲🇾 Malaysia
+- 🇨🇦 Canada
+
+---
+
+### **PAGE 6: PRICING** (Optional)
+
+**If pricing is not finalized, use "Contact-Based" strategy:**
+
+**Headline:**
+```
+Custom Pricing For Your Scale
+```
+
+**Subheading:**
+```
+Every organization is different. We don't believe in one-size-fits-all 
+pricing. Let's talk about your specific needs and timeline.
+```
+
+**Three-Tier Service Approach (Conceptual):**
+
+**Tier 1: Quick Assessment**
+- Duration: 1-2 weeks
+- Scope: Focused on specific vulnerabilities
+- Deliverables: Findings + basic remediation
+- Price: Contact for pricing
+
+**Tier 2: Standard Audit**
+- Duration: 2-4 weeks
+- Scope: Full red-team assessment + compliance mapping
+- Deliverables: Executive report, technical details, remediation roadmap
+- Price: Contact for pricing
+
+**Tier 3: Enterprise Package**
+- Duration: 4-8 weeks
+- Scope: Full assessment + workshops + ongoing support
+- Deliverables: Everything in Tier 2 + incident readiness training + 30-day follow-up
+- Price: Contact for pricing
+
+**CTA:** "Get A Custom Quote" (red button)
+
+---
+
+### **PAGE 7: PRIVACY POLICY**
+
+**Standard Legal Template** covering:
+- Data collection practices
+- How data is used
+- Storage and security
+- User rights
+- Third-party sharing
+- Cookies
+- Contact info for privacy inquiries
+
+(Use template from your legal advisor or privacy policy generator)
+
+---
+
+### **PAGE 8: TERMS OF SERVICE**
+
+**Standard Legal Template** covering:
+- Service description
+- Acceptable use policy
+- Limitations of liability
+- Confidentiality agreements
+- Payment terms (if applicable)
+- Termination policies
+- Dispute resolution
+
+(Use template from your legal advisor)
+
+---
+
+## **NAVIGATION STRUCTURE**
+
+**Main Navigation:**
+- Home
+- Services
+- Team
+- About
+- Contact
+- Blog (optional, future)
+
+**Footer Navigation:**
+- About
+- Services
+- Team
+- Contact
+- Pricing
+- Blog
+- Privacy Policy
+- Terms of Service
+
+---
+
+## **ADDITIONAL REQUIREMENTS**
+
+1. **Responsive Design:** Full mobile, tablet, and desktop responsiveness
+2. **No Hover Animations:** Buttons and links change color on hover. No floating, scaling, or shadow effects.
+3. **Loading States:** Clear loading indicators for forms
+4. **Form Validation:** Client-side validation for all forms with error messages
+5. **Accessibility:** WCAG 2.1 AA compliance
+   - Alt text for all images
+   - Proper heading hierarchy
+   - Sufficient color contrast
+   - Keyboard navigation support
+6. **SEO:** 
+   - Meta titles and descriptions for all pages
+   - Open Graph tags for social sharing
+   - XML sitemap
+   - Robots.txt
+7. **Analytics:** Integration ready for Google Analytics
+8. **Performance:** 
+   - Image optimization
+   - Lazy loading
+   - Minimal JavaScript
+   - Fast load times (<3 seconds)
+9. **SSL/HTTPS:** All pages served over HTTPS
+10. **CMS-Ready (Optional):** Pages structure should allow for easy content updates
+
+---
+
+## **CONTENT GUIDELINES**
+
+1. **No Repetition:** Each page has unique content. No copy-paste from homepage to other pages.
+2. **Tone:** Professional, direct, honest. No buzzwords. Technical credibility.
+3. **Headlines:** Bold, uppercase, clear. No more than 10 words.
+4. **Body Text:** Short paragraphs (3-4 sentences max). Active voice. Clear benefits.
+5. **CTAs:** Every section has a clear call-to-action. Red buttons for primary, outlined for secondary.
+6. **Proof:** Focus on reproducible results, not vague claims.
+
+---
+
+## **TECHNICAL STACK RECOMMENDATIONS**
+
+**Frontend:**
+- React, Vue, or vanilla HTML/CSS (minimalist approach preferred)
+- Tailwind CSS for utility-first styling
+- No heavy animation libraries
+
+**Backend:**
+- Node.js + Express or similar for form handling
+- Email service for contact form (Sendgrid, Mailgun, etc.)
+
+**Hosting:**
+- Vercel, Netlify, or AWS for static/serverless deployment
+
+**CMS (Optional):**
+- Strapi, Contentful, or Ghost for blog/content management
+
+---
+
+## **IMAGE REQUIREMENTS**
+
+1. **Hero Section:** Professional cybersecurity image (hacker/tech), 1920x1080px
+2. **Team Photos:** Professional headshots, 300x300px or larger, square format
+3. **Service Icons:** Minimal, professional icons (circuit board, document, globe, etc.)
+4. **Social Proof:** Optional case study images, client logos
+
+**All images should be:**
+- Professional photography only
+- No illustrations or abstract art
+- High resolution (at least 2x DPI for retina displays)
+- Optimized for web (<200KB per image)
+- Descriptive alt text
+
+---
+
+## **FINAL DELIVERABLES**
+
+1. **Complete website codebase** (GitHub repo or file structure)
+2. **All HTML pages** with semantic markup
+3. **CSS stylesheet** with organized variables for colors/spacing
+4. **JavaScript** for interactivity (minimal, essential only)
+5. **Responsive design** tested on mobile, tablet, desktop
+6. **Contact form** connected to email service
+7. **LinkedIn links** integrated (with proper target="_blank")
+8. **Mobile-optimized navigation** (hamburger menu)
+9. **Performance optimized** (fast load times, optimized images)
+10. **Accessibility audit** (WCAG 2.1 AA compliance)
+11. **SEO setup** (meta tags, sitemap, robots.txt)
+12. **Documentation** (how to update content, deploy changes)
+
+---
+
+**END OF PROMPT**
+
