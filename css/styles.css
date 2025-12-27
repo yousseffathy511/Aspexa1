@@ -995,6 +995,160 @@ p {
 }
 
 /* ========================================
+   TEAM PAGE - Professional Dark Design
+======================================== */
+.team-section {
+  padding-bottom: var(--space-16);
+}
+
+.team-section-header {
+  margin-bottom: var(--space-10);
+}
+
+.team-section-label {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-accent-red);
+  font-weight: 600;
+  margin-bottom: var(--space-3);
+}
+
+.team-section-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+/* Team Grids */
+.team-leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.team-exec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  max-width: 800px;
+}
+
+.team-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-5);
+}
+
+/* Team Member Card - Dark Professional */
+.team-member-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: var(--space-8);
+  text-align: center;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.team-member-card:hover {
+  border-color: rgba(236, 0, 0, 0.3);
+  transform: translateY(-4px);
+}
+
+/* Featured Card (Co-Founders) */
+.team-member-featured {
+  background: linear-gradient(180deg, rgba(236, 0, 0, 0.08) 0%, rgba(236, 0, 0, 0.02) 100%);
+  border-color: rgba(236, 0, 0, 0.2);
+}
+
+.team-member-featured:hover {
+  border-color: rgba(236, 0, 0, 0.5);
+}
+
+/* Team Member Image */
+.team-member-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto var(--space-5);
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-member-featured .team-member-image {
+  width: 120px;
+  height: 120px;
+  border-color: rgba(236, 0, 0, 0.3);
+}
+
+.team-member-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.team-member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Team Member Info */
+.team-member-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member-name {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: var(--space-2);
+}
+
+.team-member-featured .team-member-name {
+  font-size: var(--font-size-xl);
+}
+
+.team-member-role {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-4);
+  line-height: 1.4;
+}
+
+.team-member-featured .team-member-role {
+  color: var(--color-accent-red);
+  font-weight: 500;
+}
+
+/* LinkedIn Button */
+.team-member-linkedin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--color-text-light);
+  transition: all 0.2s ease;
+}
+
+.team-member-linkedin:hover {
+  background: #0077b5;
+  border-color: #0077b5;
+  color: var(--color-white);
+}
+
+/* ========================================
    COMPARISON TABLE
 ======================================== */
 .comparison-table {
@@ -1365,6 +1519,14 @@ p {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .team-leadership-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .footer-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1409,6 +1571,22 @@ p {
 
   .team-grid,
   .team-grid-large {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-leadership-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .team-exec-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .team-tech-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1472,6 +1650,12 @@ p {
   .team-grid,
   .team-grid-large {
     grid-template-columns: 1fr;
+  }
+
+  .team-tech-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .location-grid {
