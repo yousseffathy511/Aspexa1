@@ -887,7 +887,7 @@ p {
 }
 
 /* ========================================
-   TEAM CARDS
+   TEAM CARDS - Modern Design
 ======================================== */
 .team-grid {
   display: grid;
@@ -896,21 +896,34 @@ p {
 }
 
 .team-card {
-  background-color: var(--color-light-gray);
+  background: linear-gradient(145deg, #ffffff 0%, #f0f0f0 100%);
   text-align: center;
-  padding: var(--space-6);
+  padding: var(--space-8);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 .team-card-image {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto var(--space-4);
-  background-color: #ddd;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto var(--space-6);
+  background: linear-gradient(135deg, #e0e0e0 0%, #c0c0c0 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #999;
+  color: #888;
   font-size: var(--font-size-sm);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--color-white);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .team-card-image img {
@@ -920,7 +933,7 @@ p {
 }
 
 .team-card-name {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   font-weight: 700;
   color: var(--color-text-dark);
   margin-bottom: var(--space-2);
@@ -929,39 +942,56 @@ p {
 .team-card-role {
   font-size: var(--font-size-sm);
   color: var(--color-accent-red);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-5);
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .team-card-linkedin {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border: 1px solid var(--color-border-light);
-  color: var(--color-text-dark);
-  transition: background-color var(--transition-fast), color var(--transition-fast);
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #0077b5 0%, #005582 100%);
+  border: none;
+  border-radius: 12px;
+  color: var(--color-white);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .team-card-linkedin:hover {
-  background-color: var(--color-accent-red);
-  border-color: var(--color-accent-red);
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 119, 181, 0.4);
   color: var(--color-white);
 }
 
-/* Team page - larger cards */
+/* Team page - larger cards in 2-column grid */
 .team-grid-large {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-8);
 }
 
 .team-card-large {
-  padding: var(--space-8);
+  padding: var(--space-10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .team-card-large .team-card-image {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
+  border-width: 5px;
+}
+
+.team-card-large .team-card-name {
+  font-size: var(--font-size-2xl);
+}
+
+.team-card-large .team-card-role {
+  font-size: var(--font-size-base);
 }
 
 /* ========================================
@@ -1024,56 +1054,144 @@ p {
 }
 
 /* ========================================
-   PRICING CARDS
+   PRICING CARDS - Modern Design
 ======================================== */
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-8);
+  gap: var(--space-6);
+  align-items: stretch;
 }
 
 .pricing-card {
-  background-color: var(--color-light-gray);
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
   color: var(--color-text-dark);
-  padding: var(--space-8);
+  padding: var(--space-10);
   text-align: center;
+  border-radius: 24px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Featured/Popular Card */
+.pricing-card.featured {
+  background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
+  color: var(--color-white);
+  transform: scale(1.05);
+  z-index: 10;
+  border: 2px solid var(--color-accent-red);
+  box-shadow: 0 8px 40px rgba(236, 0, 0, 0.2);
+}
+
+.pricing-card.featured:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 15px 50px rgba(236, 0, 0, 0.3);
+}
+
+.pricing-card-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--color-accent-red) 0%, #b30000 100%);
+  color: var(--color-white);
+  padding: var(--space-2) var(--space-6);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(236, 0, 0, 0.4);
 }
 
 .pricing-card-tier {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   color: var(--color-accent-red);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-3);
+  font-weight: 600;
+}
+
+.pricing-card.featured .pricing-card-tier {
+  color: var(--color-accent-red);
 }
 
 .pricing-card-title {
   font-size: var(--font-size-2xl);
-  font-weight: 700;
-  margin-bottom: var(--space-4);
+  font-weight: 800;
+  margin-bottom: var(--space-2);
 }
 
 .pricing-card-duration {
   font-size: var(--font-size-sm);
-  color: #666;
-  margin-bottom: var(--space-6);
+  color: #888;
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.featured .pricing-card-duration {
+  color: var(--color-text-light);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
 }
 
 .pricing-card-features {
   text-align: left;
   margin-bottom: var(--space-8);
+  flex-grow: 1;
 }
 
 .pricing-card-features li {
   padding: var(--space-3) 0;
-  border-bottom: 1px solid var(--color-border-light);
   font-size: var(--font-size-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.pricing-card-features li::before {
+  content: "✓";
+  color: var(--color-accent-red);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.pricing-card.featured .pricing-card-features li {
+  color: var(--color-text-light);
 }
 
 .pricing-card-price {
   font-size: var(--font-size-lg);
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: var(--space-6);
+  color: var(--color-text-dark);
+}
+
+.pricing-card.featured .pricing-card-price {
+  color: var(--color-white);
+}
+
+.pricing-card .btn {
+  width: 100%;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 12px;
+  font-size: var(--font-size-sm);
+}
+
+.pricing-card.featured .btn {
+  background: linear-gradient(135deg, var(--color-accent-red) 0%, #b30000 100%);
+  border-color: var(--color-accent-red);
+  box-shadow: 0 4px 15px rgba(236, 0, 0, 0.3);
 }
 
 /* ========================================
