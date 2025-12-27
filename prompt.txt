@@ -6,7 +6,7 @@
 
 You are tasked with building a complete professional website for **ASPEXA**, an AI red-teaming and adversarial testing company specializing in Arabic dialect security assessments for the MENA region.
 
-**Design Philosophy:** Clean, minimalist, professional cybersecurity aesthetic. No floating elements, no excessive animations, no hover effects. Brutalist professionalism.
+**Design Philosophy:** Clean, minimalist, professional cybersecurity aesthetic. No floating elements, no excessive animations, no hover effects. Brutalist professionalism. **Everything must be fully smooth with seamless transitions.**
 
 ---
 
@@ -52,37 +52,68 @@ You are tasked with building a complete professional website for **ASPEXA**, an 
 
 ## **TYPOGRAPHY**
 
-- **Headlines:** Sans-serif, bold, uppercase for major sections (consider: Inter, Helvetica, Roboto)
-- **Body Text:** Sans-serif, regular weight, 16px minimum
-- **CTAs:** Bold, uppercase
+- **Primary Font:** Radjhani (all headlines and body text)
+- **Fallback Font:** Sans-serif
+- **Headlines:** Radjhani, bold, uppercase for major sections
+- **Body Text:** Radjhani, regular weight, 16px minimum
+- **CTAs:** Radjhani, bold, uppercase
 - **Code/Technical:** Monospace for any code snippets
 
-**No custom fonts** unless necessary. Use system fonts or common web-safe fonts.
+**Font Implementation:** Import Radjhani from Google Fonts or similar service. Use as the main font throughout the entire website.
 
 ---
 
 ## **DESIGN PRINCIPLES**
 
-1. **Minimalist Layout:** Maximum whitespace. Content breathes.
-2. **No Hover Effects:** Buttons change color on hover only. No floating, scaling, or shadow effects.
-3. **Clear Typography Hierarchy:** Headers > Subheaders > Body > Small text
-4. **Consistent Spacing:** Grid-based layout (8px or 16px baseline)
-5. **Brutalist Borders:** Subtle borders where needed. No rounded corners (or minimal 2-4px only).
-6. **Professional Imagery:** Photography only—no illustration, no gradients, no abstract art.
-7. **Section Separation:** Use color blocks and whitespace, not divider lines.
-8. **Direct Call-to-Action:** Every section has a clear CTA button (red on dark, dark on light).
+1. **Fully Smooth & Seamless:** All transitions, animations, and interactions must be smooth and fluid (400-600ms transitions recommended)
+2. **Minimalist Layout:** Maximum whitespace. Content breathes.
+3. **No Hover Effects:** Buttons change color on hover only. No floating, scaling, or shadow effects.
+4. **Clear Typography Hierarchy:** Headers > Subheaders > Body > Small text
+5. **Consistent Spacing:** Grid-based layout (8px or 16px baseline)
+6. **Brutalist Borders:** Subtle borders where needed. No rounded corners (or minimal 2-4px only).
+7. **Professional Imagery:** Photography only—no illustrations, no gradients, no abstract art.
+8. **Section Separation:** Use color blocks and whitespace, not divider lines.
+9. **Direct Call-to-Action:** Every section has a clear CTA button (red on dark, dark on light).
+10. **Interactive Excellence:** Homepage should feature amazing CSS and UI/UX with smooth transitions. Use React for interactive elements. No generic "AI-made" looking basic designs.
+
+---
+
+## **ASSET FOLDERS**
+
+**IMPORTANT:** The following asset folders are provided:
+
+### **Folder 1: `/logos`**
+Contains logo files and icons. You can choose whichever logo/design fits best for the brand. Also contains:
+- **Snake Head Icon / Snake Icon:** MANDATORY to place beside the first text block below the header on the homepage (choose size that fits best)
+- **Favicon:** Must be used for the browser tab favicon
+
+### **Folder 2: `/team`**
+Contains professional headshot images of team members. Each image is named by the person's full name (e.g., `Baraa Al Refai.jpg`, `Abdulrahman Ali.jpg`, etc.). Use these images in the Team and About pages.
+
+### **Folder 3: `/services` (Optional)**
+May contain service icons/symbols. Feel free to use or create professional symbols for each service to enhance visual appeal.
+
+---
+
+## **SPECIAL CSS EFFECTS**
+
+### **Team Member Image Hover Effect (CRITICAL)**
+- **Default State:** All team member images appear in **BLACK AND WHITE**
+- **Hover State:** When the mouse cursor hovers over a team member image, it smoothly transitions to **ORIGINAL COLOR**
+- **Transition:** Smooth, gradual color transition (NOT immediate). Use CSS filters or opacity layering for smooth grayscale-to-color effect. Recommend 500ms transition duration.
+- **Implementation:** Use CSS `filter: grayscale(100%)` by default, transition to `filter: grayscale(0%)` on hover.
 
 ---
 
 ## **PAGES REQUIRED**
 
-1. **Homepage**
+1. **Homepage** (React preferred for interactive elements)
 2. **About Us**
 3. **Services**
 4. **Methodology** (optional: can be subsection of Services)
 5. **Team**
 6. **Contact Us**
-7. **Pricing** (if available; otherwise, "Contact for pricing" strategy)
+7. **Pricing** (Contact-based strategy)
 8. **Blog/Insights** (optional; can launch post-launch)
 9. **FAQ**
 10. **Privacy Policy** (required)
@@ -94,21 +125,27 @@ You are tasked with building a complete professional website for **ASPEXA**, an 
 
 ---
 
-### **PAGE 1: HOMEPAGE**
+### **PAGE 1: HOMEPAGE (React - Interactive & Amazing)**
 
-**Sections in order:**
+**Design Requirement:** This page should showcase the best CSS and UI/UX possible with smooth transitions throughout. Make it interactive, simple, and visually stunning. No generic "AI-made" looking designs. Use React for dynamic interactions.
 
 #### **1. Navigation Bar (Fixed or Sticky)**
-- Logo on left (ASPEXA red logo)
+- Logo on left (from `/logos` folder - choose best variant)
 - Menu items: Home | Services | Team | About | Contact
 - "Contact Us" button (red background, white text) on right
 - Mobile hamburger menu
+- **Smooth transitions:** Logo and menu should fade/slide smoothly, not appear abruptly
 
 #### **2. Hero Section**
 **Headline:**
 ```
 Advanced AI Red-Teaming
 ```
+
+**Visual Element:** 
+- **MANDATORY:** Place the **Snake Head Icon / Snake Icon** (from `/logos` folder) beside or below the headline text
+- Choose the best size and positioning that fits the design
+- Icon should have smooth entrance animation (fade-in, slide-in, or similar)
 
 **Subheading:**
 ```
@@ -119,7 +156,7 @@ covers Arabic dialects and regional compliance frameworks. You receive
 reproducible exploits, clear evidence, and actionable remediation guidance 
 your team can implement immediately.
 
-We've conducted red-team assessments across MENA's critical sectors—banking, 
+We've conducted red-team assessments across critical sectors—banking, 
 government, fintech, telecommunications, and energy. Our findings have prevented 
 regulatory violations, protected customer data, and mitigated risk before 
 vulnerabilities could be weaponized.
@@ -127,31 +164,14 @@ vulnerabilities could be weaponized.
 
 **CTA Button:** "Contact Us" (red, white text)
 
-**Background:** Dark (#000000) with professional image (optional)
+**Background:** Dark (#000000)
+
+**Animation:** Smooth fade-in, staggered entrance for text and icon
 
 ---
 
-#### **3. Stats Section (4 Cards)**
-
-Three-column layout on desktop, stacked on mobile.
-
-**Card 1:**
-- Stat: "50+"
-- Label: "Red-Team Assessments"
-
-**Card 2:**
-- Stat: "15+"
-- Label: "MENA Industries Covered"
-
-**Card 3:**
-- Stat: "100%"
-- Label: "Actionable Findings"
-
-**Card 4:**
-- Stat: "8"
-- Label: "Security Specialists"
-
-**Style:** Dark background, white text, light gray borders
+#### **3. Remove Stats Section**
+**DO NOT INCLUDE:** Stats section has been removed (no client statistics needed).
 
 ---
 
@@ -192,7 +212,9 @@ engineering team has everything needed to address vulnerabilities immediately.
 CTA: Get Remediation Guide →
 ```
 
-**Style:** Three columns on desktop, stacked on mobile. Light gray backgrounds (#F8F8F8), dark text, subtle borders.
+**Style:** Three columns on desktop, stacked on mobile. Light gray backgrounds (#F8F8F8), dark text, subtle borders. **Include professional service icons/symbols** (can be from `/services` folder or custom-made) above each headline.
+
+**Smooth Transitions:** Cards should smoothly fade-in and have subtle hover effects (color change only, no scaling).
 
 ---
 
@@ -222,7 +244,9 @@ CTA: Get Remediation Guide →
 - Content: Every finding maps to UAE PDPL, SAMA guidelines, and Saudi NDAL. No translation layer. No "we think this violates X regulation." We provide the exact regulatory reference so your legal team moves fast.
 - Link: "View Compliance Mappings" →
 
-**Style:** Dark background, three columns, white text with red accents.
+**Style:** Dark background, three columns, white text with red accents. **Include icons/symbols** for visual enhancement.
+
+**Smooth Transitions:** All elements fade in smoothly with staggered timing.
 
 ---
 
@@ -243,7 +267,7 @@ CTA: Get Remediation Guide →
 7. Live Exploitation
 8. Human Authorization Gate
 
-**Style:** Vertical timeline or numbered list on dark background.
+**Style:** Vertical timeline or numbered list on dark background. **Include smooth scroll animations** as user scrolls through.
 
 ---
 
@@ -264,7 +288,7 @@ CTA: Get Remediation Guide →
 - Arabic dialect attack patterns
 - Industry insights from assessments
 
-**Style:** Dark background, centered layout, professional copy.
+**Style:** Dark background, centered layout, professional copy. Smooth focus states on input fields.
 
 ---
 
@@ -273,9 +297,12 @@ CTA: Get Remediation Guide →
 **Columns:**
 
 **Column 1: About**
-- Logo
+- Logo (from `/logos` folder)
 - Brief tagline: "AI Security. Arabic Native. MENA Focused."
-- Social media icons (LinkedIn, Twitter, etc. if available)
+- Social Media Icons (MANDATORY):
+  - **Instagram** icon (clickable link)
+  - **X (Twitter)** icon (clickable link)
+  - **LinkedIn** icon (clickable link)
 
 **Column 2: Services**
 - AI Red-Teaming Audit
@@ -297,13 +324,13 @@ CTA: Get Remediation Guide →
 - Cookies
 
 **Column 5: Contact**
-- Email: contact@aspexa.ai (or your preferred email)
+- Email: **info@aspexa.tech** (PRIMARY CONTACT)
 - Phone: +971 (0) [your number]
-- Location: UAE (Primary), KSA, MENA
+- Location: **United Arab Emirates**
 
 **Bottom Line:** Copyright © 2025 ASPEXA. All rights reserved.
 
-**Style:** Dark background, light text, organized grid layout.
+**Style:** Dark background, light text, organized grid layout. Social icons should have smooth color transitions on hover.
 
 ---
 
@@ -356,14 +383,17 @@ English. That gap is what we close.
 **Subheading:**
 ```
 Red-teamers, Arabic linguists, and offensive engineers specializing in AI 
-security. Distributed across MENA, building adversarial testing methodology 
+security. Operating in UAE, building adversarial testing methodology 
 that global firms can't replicate.
 ```
 
 **10 Team Member Cards (Grid Layout - 5 per row on desktop, 2 per row on tablet, 1 per row on mobile):**
 
 Each card contains:
-- **Placeholder Image** (Professional headshot - 250x250px or square)
+- **Team Member Image** (from `/team` folder - named by person's full name, e.g., `Baraa Al Refai.jpg`)
+  - **SPECIAL CSS:** Image is BLACK AND WHITE by default
+  - **On Hover:** Smoothly transitions to ORIGINAL COLOR (500ms transition)
+  - **Implementation:** Use CSS `filter: grayscale(100%)` → `filter: grayscale(0%)`
 - **Name** (Bold, large text)
 - **Role/Title** (Smaller text, red color)
 - **LinkedIn Icon** (Clickable link to LinkedIn profile)
@@ -410,7 +440,7 @@ Each card contains:
     - Role: Quality Assurance & Compliance Lead
     - LinkedIn: [clickable icon with link]
 
-**Card Style:** Light gray background (#F8F8F8), center-aligned, border on hover (no floating effect).
+**Card Style:** Light gray background (#F8F8F8), center-aligned, border on hover (no floating effect). Images should have smooth grayscale-to-color transition.
 
 ---
 
@@ -519,7 +549,7 @@ attack surface of your generative AI infrastructure.
 #### **2. Service Cards (Six Services)**
 
 Each service card includes:
-- **Service Icon**
+- **Service Icon/Symbol** (from `/services` folder or custom - MANDATORY for visual enhancement)
 - **Service Name**
 - **Brief Description**
 - **Test Coverage (Bullet Points)**
@@ -529,6 +559,8 @@ Each service card includes:
 
 **Service 1: AI Red-Teaming Audit (Flagship)**
 ```
+Icon: [Professional icon representing red-teaming/adversarial testing]
+
 Description: Adversarial testing of LLMs, chatbots, AI agents, and 
 autonomous systems.
 
@@ -551,6 +583,8 @@ Ideal For: Banks, telecoms, government digital services, enterprise SaaS platfor
 
 **Service 2: RAG-Specific Security Assessment**
 ```
+Icon: [Professional icon representing knowledge bases/database security]
+
 Description: Retrieval-augmented generation systems (document Q&A, 
 enterprise knowledge bases, internal AI assistants).
 
@@ -574,6 +608,8 @@ healthcare, energy, legal, government ministries
 
 **Service 3: Arabic Dialect Jailbreak Library & Testing**
 ```
+Icon: [Professional icon representing language/linguistics/Arabic script]
+
 Description: Proprietary adversarial prompt sets designed for MENA-specific 
 contexts.
 
@@ -601,6 +637,8 @@ serving Arabic-speaking populations
 
 **Service 4: AI Compliance & Regulatory Assurance Package**
 ```
+Icon: [Professional icon representing compliance/documents/regulation]
+
 Description: Translating technical findings into auditable, governance-ready 
 artifacts.
 
@@ -619,6 +657,8 @@ healthcare), entities preparing for regulatory audits
 
 **Service 5: AI Incident Readiness Workshop**
 ```
+Icon: [Professional icon representing training/workshop/people]
+
 Description: Preparedness training for detection, response, and containment 
 of AI abuse in real-time.
 
@@ -640,6 +680,8 @@ infrastructure operators, any organization with production AI systems
 
 **Service 6: Classical ML Security Assessment**
 ```
+Icon: [Professional icon representing machine learning/algorithms]
+
 Description: Security testing for classical machine learning systems 
 (spam classifiers, fraud detectors, recommendation engines, malware scanners).
 
@@ -664,7 +706,7 @@ systems), recommendation platforms, financial risk models
 ```
 
 **Card Style:** Light gray backgrounds (#F8F8F8), organized grid, expandable 
-sections if needed.
+sections if needed. **Icons should be prominently displayed** for visual appeal.
 
 ---
 
@@ -673,7 +715,7 @@ sections if needed.
 A simple table showing:
 - Service Name
 - Duration (e.g., 2-4 weeks)
-- Typical Price Range (if available; otherwise "Contact for pricing")
+- Price (Contact for pricing)
 - Best Suited For
 
 ---
@@ -710,8 +752,7 @@ adversarial attacks.
 **Column 1: Where We Are**
 - Icon: Location pin
 - Title: Where We Are
-- Content: United Arab Emirates (Primary)
-            Distributed team across Malaysia, Canada, KSA, and UAE
+- Content: United Arab Emirates
 
 **Column 2: Phone**
 - Icon: Phone icon
@@ -721,7 +762,7 @@ adversarial attacks.
 **Column 3: Email**
 - Icon: Email icon
 - Title: Email
-- Content: contact@aspexa.ai (or your preferred email)
+- Content: **info@aspexa.tech**
 
 **Style:** Dark background, three columns, centered text.
 
@@ -747,7 +788,7 @@ within 24 hours.
 - Submit Button: "Send Message" (red)
 
 **Form Style:** Clean, minimal, dark background, white input fields with 
-dark text.
+dark text. **Smooth focus states and transitions** on all form elements.
 
 ---
 
@@ -842,7 +883,7 @@ compliance mappings, and executive summaries for regulatory review. We ensure
 your assessment findings align with every framework your regulators care about.
 ```
 
-**Style:** Accordion/expandable sections, dark background, light text.
+**Style:** Accordion/expandable sections, dark background, light text. **Smooth expand/collapse animations**.
 
 ---
 
@@ -857,7 +898,7 @@ Our Expert Team
 **Subheading:**
 ```
 Red-teamers, Arabic linguists, and offensive engineers specializing in AI 
-security. Distributed across MENA, building adversarial testing methodology 
+security. Operating in UAE, building adversarial testing methodology 
 that global firms can't replicate.
 ```
 
@@ -868,7 +909,10 @@ that global firms can't replicate.
 **Same 10 team members as About page, but with expanded layout:**
 
 Each card includes:
-- **Large Placeholder Image** (300x300px or larger)
+- **Large Team Member Image** (from `/team` folder - named by person's full name, e.g., `Baraa Al Refai.jpg`)
+  - **SPECIAL CSS:** Image is BLACK AND WHITE by default
+  - **On Hover:** Smoothly transitions to ORIGINAL COLOR (500ms transition)
+  - **Implementation:** Use CSS `filter: grayscale(100%)` → `filter: grayscale(0%)`
 - **Name** (Bold, large)
 - **Role/Title** (Red color, smaller)
 - **Brief Bio** (2-3 sentences - optional, can be filled in later)
@@ -892,22 +936,14 @@ Each card includes:
 
 #### **3. Distributed Team Section**
 
-**Headline:** Distributed Across MENA
+**Headline:** Operating in UAE
 
-**Subheading:** We operate across multiple regions, bringing local context 
-and global expertise to every assessment.
-
-**Location Cards:**
-- 🇦🇪 United Arab Emirates (Primary Hub)
-- 🇸🇦 Saudi Arabia
-- 🇲🇾 Malaysia
-- 🇨🇦 Canada
+**Subheading:** Our expert team is based in the United Arab Emirates, bringing 
+deep regional expertise and local context to every assessment.
 
 ---
 
-### **PAGE 6: PRICING** (Optional)
-
-**If pricing is not finalized, use "Contact-Based" strategy:**
+### **PAGE 6: PRICING** (Contact-Based Strategy)
 
 **Headline:**
 ```
@@ -996,30 +1032,111 @@ pricing. Let's talk about your specific needs and timeline.
 
 ---
 
+## **TECHNICAL REQUIREMENTS**
+
+### **Framework & Stack**
+- **Frontend:** React (preferred for homepage) or vanilla HTML/CSS
+- **CSS:** Tailwind CSS or custom CSS (ensure fully smooth transitions)
+- **Fonts:** Radjhani (Google Fonts) as primary font throughout entire site
+- **Animations:** Smooth transitions (400-600ms recommended) for all interactive elements
+- **Responsiveness:** Full mobile, tablet, and desktop responsiveness
+
+### **Performance & Smoothness**
+- All transitions must be smooth and fluid (no jarring animations)
+- Page load time: <3 seconds
+- 60fps smooth animations
+- Image optimization and lazy loading
+- Minimal JavaScript (critical only)
+
+### **Browser Compatibility**
+- Chrome, Firefox, Safari, Edge (latest versions)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+---
+
+## **ASSET IMPLEMENTATION (CRITICAL)**
+
+### **Favicon**
+- **Location:** `/logos` folder
+- **Implementation:** Use as browser tab favicon
+- **Apply to all pages**
+
+### **Logo**
+- **Location:** `/logos` folder
+- **Choose:** Any logo variant that fits the brand
+- **Use in:** Header (navigation) and footer
+
+### **Snake Head/Icon (MANDATORY)**
+- **Location:** `/logos` folder (named "snake head icon" or "snake icon")
+- **Implementation:** Place beside or below first text block on homepage
+- **Placement:** Below hero headline/above subheading
+- **Size:** Choose best size that fits design
+- **Animation:** Smooth fade-in or entrance effect
+
+### **Team Member Images**
+- **Location:** `/team` folder
+- **Naming:** Each image named by person's full name (e.g., `Baraa Al Refai.jpg`)
+- **CSS Effect:** 
+  - Default: BLACK AND WHITE (`filter: grayscale(100%)`)
+  - Hover: ORIGINAL COLOR (`filter: grayscale(0%)`)
+  - Transition: Smooth 500ms
+- **Use in:** Team page and About page
+
+### **Service Icons/Symbols (Optional but Recommended)**
+- **Location:** `/services` folder (if provided) or create custom
+- **Implementation:** Place above each service title on Services page
+- **Style:** Professional, minimalist icons matching brand aesthetic
+
+---
+
+## **FOOTER SOCIAL ICONS (MANDATORY)**
+
+In the footer, include clickable social media icons:
+- **Instagram** - Links to ASPEXA Instagram profile
+- **X (Twitter)** - Links to ASPEXA X profile
+- **LinkedIn** - Links to ASPEXA LinkedIn profile
+
+**Style:** Professional icons with smooth color transitions on hover (change to red #EC0000).
+
+---
+
+## **CONTACT EMAIL**
+
+Throughout the entire website, use:
+```
+info@aspexa.tech
+```
+
+This is the primary contact email. Use consistently across all pages (Contact page, footer, forms, etc.).
+
+---
+
 ## **ADDITIONAL REQUIREMENTS**
 
 1. **Responsive Design:** Full mobile, tablet, and desktop responsiveness
-2. **No Hover Animations:** Buttons and links change color on hover. No floating, scaling, or shadow effects.
-3. **Loading States:** Clear loading indicators for forms
-4. **Form Validation:** Client-side validation for all forms with error messages
-5. **Accessibility:** WCAG 2.1 AA compliance
-   - Alt text for all images
+2. **Smooth Animations:** ALL transitions must be smooth and fluid (no abrupt changes)
+3. **No Generic Animations:** Homepage should NOT look like standard "AI-made" designs. Be creative and unique.
+4. **Font:** Radjhani throughout entire website
+5. **Loading States:** Clear loading indicators for forms
+6. **Form Validation:** Client-side validation for all forms with smooth error messages
+7. **Accessibility:** WCAG 2.1 AA compliance
+   - Alt text for all images (especially team photos)
    - Proper heading hierarchy
    - Sufficient color contrast
    - Keyboard navigation support
-6. **SEO:** 
+8. **SEO:** 
    - Meta titles and descriptions for all pages
    - Open Graph tags for social sharing
    - XML sitemap
    - Robots.txt
-7. **Analytics:** Integration ready for Google Analytics
-8. **Performance:** 
-   - Image optimization
-   - Lazy loading
-   - Minimal JavaScript
-   - Fast load times (<3 seconds)
-9. **SSL/HTTPS:** All pages served over HTTPS
-10. **CMS-Ready (Optional):** Pages structure should allow for easy content updates
+9. **Analytics:** Integration ready for Google Analytics
+10. **Performance:** 
+    - Image optimization
+    - Lazy loading
+    - Minimal JavaScript
+    - Fast load times (<3 seconds)
+11. **SSL/HTTPS:** All pages served over HTTPS
+12. **CMS-Ready (Optional):** Pages structure should allow for easy content updates
 
 ---
 
@@ -1034,55 +1151,38 @@ pricing. Let's talk about your specific needs and timeline.
 
 ---
 
-## **TECHNICAL STACK RECOMMENDATIONS**
+## **IMPORTANT EXCLUSIONS (DO NOT INCLUDE)**
 
-**Frontend:**
-- React, Vue, or vanilla HTML/CSS (minimalist approach preferred)
-- Tailwind CSS for utility-first styling
-- No heavy animation libraries
-
-**Backend:**
-- Node.js + Express or similar for form handling
-- Email service for contact form (Sendgrid, Mailgun, etc.)
-
-**Hosting:**
-- Vercel, Netlify, or AWS for static/serverless deployment
-
-**CMS (Optional):**
-- Strapi, Contentful, or Ghost for blog/content management
-
----
-
-## **IMAGE REQUIREMENTS**
-
-1. **Hero Section:** Professional cybersecurity image (hacker/tech), 1920x1080px
-2. **Team Photos:** Professional headshots, 300x300px or larger, square format
-3. **Service Icons:** Minimal, professional icons (circuit board, document, globe, etc.)
-4. **Social Proof:** Optional case study images, client logos
-
-**All images should be:**
-- Professional photography only
-- No illustrations or abstract art
-- High resolution (at least 2x DPI for retina displays)
-- Optimized for web (<200KB per image)
-- Descriptive alt text
+- ❌ Statistics or client numbers (no stats section on homepage)
+- ❌ References to Canada, Malaysia, or other locations (UAE only)
+- ❌ Generic "AI-made" design patterns
+- ❌ Floating elements on hover
+- ❌ Jarring or abrupt animations
 
 ---
 
 ## **FINAL DELIVERABLES**
 
 1. **Complete website codebase** (GitHub repo or file structure)
-2. **All HTML pages** with semantic markup
+2. **All HTML/React pages** with semantic markup
 3. **CSS stylesheet** with organized variables for colors/spacing
-4. **JavaScript** for interactivity (minimal, essential only)
+   - Include smooth transition specifications (400-600ms)
+   - Radjhani font imports
+   - Grayscale-to-color filter transitions for team images
+4. **JavaScript/React components** for interactivity (minimal, essential only)
 5. **Responsive design** tested on mobile, tablet, desktop
-6. **Contact form** connected to email service
+6. **Contact form** connected to email service (info@aspexa.tech)
 7. **LinkedIn links** integrated (with proper target="_blank")
-8. **Mobile-optimized navigation** (hamburger menu)
-9. **Performance optimized** (fast load times, optimized images)
-10. **Accessibility audit** (WCAG 2.1 AA compliance)
-11. **SEO setup** (meta tags, sitemap, robots.txt)
-12. **Documentation** (how to update content, deploy changes)
+8. **Social media icons** in footer (Instagram, X, LinkedIn)
+9. **Mobile-optimized navigation** (hamburger menu)
+10. **Favicon** properly configured from `/logos` folder
+11. **Snake icon** prominently displayed on homepage
+12. **Team images** with grayscale-to-color hover effects
+13. **Service icons** displayed on Services page
+14. **Performance optimized** (fast load times, optimized images)
+15. **Accessibility audit** (WCAG 2.1 AA compliance)
+16. **SEO setup** (meta tags, sitemap, robots.txt)
+17. **Documentation** (how to update content, deploy changes, asset locations)
 
 ---
 
