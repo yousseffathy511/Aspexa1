@@ -345,12 +345,16 @@ p {
 .navbar-logo {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .navbar-logo img {
-  height: 36px;
+  height: 32px;
   width: auto;
+  min-width: 120px;
   display: block;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .navbar-menu {
@@ -687,8 +691,12 @@ p {
 }
 
 .footer-brand-logo {
-  height: 40px;
+  height: 32px;
+  width: auto;
+  min-width: 120px;
   margin-bottom: var(--space-4);
+  object-fit: contain;
+  object-position: left center;
 }
 
 .footer-tagline {
