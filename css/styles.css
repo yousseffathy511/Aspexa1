@@ -571,6 +571,88 @@ p {
 }
 
 /* ========================================
+   SERVICE CARDS - Dark Bordered Design
+======================================== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+}
+
+.service-card-dark {
+  background-color: transparent;
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: var(--space-8);
+  transition: border-color 0.3s ease;
+}
+
+.service-card-dark:hover {
+  border-color: rgba(236, 0, 0, 0.4);
+}
+
+.service-card-dark-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-accent-red);
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.service-card-dark-description {
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  margin-bottom: var(--space-6);
+  line-height: 1.7;
+}
+
+.service-card-dark-heading {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.service-card-dark-list {
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-5);
+}
+
+.service-card-dark-list li {
+  position: relative;
+  padding-left: var(--space-4);
+  margin-bottom: var(--space-3);
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  line-height: 1.5;
+  list-style: none;
+}
+
+.service-card-dark-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-red);
+  font-weight: 700;
+}
+
+.service-card-dark-ideal {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-card-dark-ideal strong {
+  color: var(--color-white);
+}
+
+/* ========================================
    SECTION HEADERS
 ======================================== */
 .section-header {
@@ -1608,6 +1690,10 @@ p {
   }
 
   .contact-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
     grid-template-columns: 1fr;
   }
 

@@ -75,165 +75,161 @@
     </section>
 
     <!-- Services Grid -->
-    <section class="section section-light">
+    <section class="section section-dark">
       <div class="container">
-        <div class="grid grid-2">
+        <div class="services-grid">
           <!-- Service 1: AI Red-Teaming Audit -->
-          <article class="service-card" id="red-teaming">
-            <h2 class="service-card-title">AI Red-Teaming Audit</h2>
-            <p class="service-card-description">
-              Adversarial testing of LLMs, chatbots, AI agents, and autonomous systems. Our flagship service for organizations deploying AI at scale.
+          <article class="service-card-dark" id="red-teaming">
+            <h2 class="service-card-dark-title">AI Red-Teaming Audit</h2>
+            <p class="service-card-dark-description">
+              Adversarial testing of LLMs, chatbots, AI agents, and autonomous systems.
             </p>
 
-            <h4 style="margin-bottom: var(--space-3); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em;">Test Coverage</h4>
-            <ul class="service-card-list">
+            <h4 class="service-card-dark-heading">Test Coverage:</h4>
+            <ul class="service-card-dark-list">
               <li>Prompt injection attacks (direct & indirect)</li>
               <li>Multi-turn jailbreak sequences</li>
-              <li>RAG knowledge base poisoning and data exfiltration</li>
-              <li>Bias and cultural/religious bypass attempts in Arabic contexts</li>
-              <li>System prompt leakage and role-play manipulation</li>
+              <li>RAG knowledge base poisoning</li>
+              <li>Bias and cultural/religious bypass attempts</li>
+              <li>System prompt leakage</li>
               <li>Excessive agency and unauthorized tool execution</li>
             </ul>
 
-            <h4 style="margin-bottom: var(--space-3); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em;">Deliverables</h4>
-            <ul class="service-card-list">
+            <h4 class="service-card-dark-heading">Deliverables:</h4>
+            <ul class="service-card-dark-list">
               <li>Executive risk report with severity ratings</li>
-              <li>Technical proof-of-concepts and reproduction steps</li>
-              <li>Mitigation roadmap aligned with your timeline</li>
-              <li>MITRE ATLAS + OWASP LLM Top 10 mappings</li>
+              <li>Technical proof-of-concepts</li>
+              <li>Mitigation roadmap</li>
+              <li>MITRE ATLAS + OWASP mappings</li>
             </ul>
 
-            <p style="font-size: var(--font-size-sm); color: #666;"><strong>Ideal For:</strong> Banks, telecoms, government digital services, enterprise SaaS platforms</p>
+            <p class="service-card-dark-ideal"><strong>Ideal For:</strong> Banks, telecoms, government, SaaS</p>
           </article>
 
           <!-- Service 2: RAG Security Assessment -->
-          <article class="service-card" id="rag">
-            <h2 class="service-card-title">RAG-Specific Security Assessment</h2>
-            <p class="service-card-description">
-              Retrieval-augmented generation systems (document Q&A, enterprise knowledge bases, internal AI assistants) require specialized security testing.
+          <article class="service-card-dark" id="rag">
+            <h2 class="service-card-dark-title">RAG-Specific Security Assessment</h2>
+            <p class="service-card-dark-description">
+              Retrieval-augmented generation systems (document Q&A, knowledge bases).
             </p>
 
-            <h4 style="margin-bottom: var(--space-3); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em;">Test Coverage</h4>
-            <ul class="service-card-list">
-              <li>Knowledge base poisoning via malicious document injection</li>
-              <li>Indirect prompt injection through retrieval context</li>
+            <h4 class="service-card-dark-heading">Test Coverage:</h4>
+            <ul class="service-card-dark-list">
+              <li>Knowledge base poisoning</li>
+              <li>Indirect prompt injection</li>
               <li>PII and confidential data exfiltration</li>
-              <li>Vector database manipulation and metadata exploitation</li>
+              <li>Vector database manipulation</li>
               <li>Retrieval ranking manipulation</li>
-              <li>Context overflow and context window attacks</li>
             </ul>
 
-            <h4 style="margin-bottom: var(--space-3); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em;">Deliverables</h4>
-            <ul class="service-card-list">
+            <h4 class="service-card-dark-heading">Deliverables:</h4>
+            <ul class="service-card-dark-list">
               <li>RAG-specific vulnerability report</li>
               <li>Database hardening recommendations</li>
               <li>Data access control audit</li>
-              <li>Retrieval safety testing report</li>
             </ul>
 
-            <p style="font-size: var(--font-size-sm); color: #666;"><strong>Ideal For:</strong> Organizations using AI on internal documents—financial services, healthcare, energy, legal, government ministries</p>
+            <p class="service-card-dark-ideal"><strong>Ideal For:</strong> Financial services, healthcare, legal, government</p>
           </article>
 
           <!-- Service 3: Arabic Dialect Testing -->
-          <article class="service-card" id="arabic">
-            <h2 class="service-card-title">Arabic Dialect Jailbreak Library & Testing</h2>
-            <p class="service-card-description">
-              Proprietary adversarial prompt sets designed for MENA-specific contexts. Our core differentiator in AI security testing.
+          <article class="service-card-dark" id="arabic">
+            <h2 class="service-card-dark-title">Arabic Dialect Jailbreak Library & Testing</h2>
+            <p class="service-card-dark-description">
+              Proprietary adversarial prompt sets designed for MENA-specific contexts.
             </p>
 
-            <h4 style="margin-bottom: var(--space-3); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em;">Test Coverage</h4>
-            <ul class="service-card-list">
+            <h4 class="service-card-dark-heading">Test Coverage:</h4>
+            <ul class="service-card-dark-list">
               <li>Gulf Arabic (Khaleeji) formal and colloquial bypasses</li>
               <li>Saudi Najdi dialect exploits</li>
               <li>Emirati code-switching and cultural triggers</li>
-              <li>Egyptian and Levantine Arabic attack vectors</li>
-              <li>North African (Moroccan, Algerian, Tunisian) dialect patterns</li>
-              <li>Religious/cultural phrasing to evade content filters</li>
-              <li>RTL/LTR encoding and Unicode manipulation</li>
+              <li>Egyptian and Levantine Arabic vectors</li>
+              <li>Religious/cultural phrasing bypasses</li>
+              <li>RTL/LTR encoding manipulation</li>
             </ul>
 
-            <h4 style="margin-bottom: var(--space-3); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em;">Deliverables</h4>
-            <ul class="service-card-list">
-              <li>Benchmark report showing model vulnerability in Arabic across dialects</li>
-              <li>Proprietary attack template library (for ongoing testing)</li>
-              <li>Cultural sensitivity and compliance analysis</li>
-              <li>Recommendations for Arabic-aware safety filters</li>
+            <h4 class="service-card-dark-heading">Deliverables:</h4>
+            <ul class="service-card-dark-list">
+              <li>Benchmark report across Arabic dialects</li>
+              <li>Proprietary attack template library</li>
+              <li>Cultural sensitivity analysis</li>
+              <li>Arabic-aware filter recommendations</li>
             </ul>
 
-            <p style="font-size: var(--font-size-sm); color: #666;"><strong>Ideal For:</strong> Government services, banks, telecoms, and any organization serving Arabic-speaking populations</p>
+            <p class="service-card-dark-ideal"><strong>Ideal For:</strong> Government services, banks, telecoms, Arabic-serving orgs</p>
           </article>
 
           <!-- Service 4: Compliance Package -->
-          <article class="service-card" id="compliance">
-            <h2 class="service-card-title">AI Compliance & Regulatory Assurance Package</h2>
-            <p class="service-card-description">
-              Translating technical findings into auditable, governance-ready artifacts for regulatory review and board presentation.
+          <article class="service-card-dark" id="compliance">
+            <h2 class="service-card-dark-title">AI Compliance & Regulatory Assurance Package</h2>
+            <p class="service-card-dark-description">
+              Translating technical findings into auditable, governance-ready artifacts.
             </p>
 
-            <h4 style="margin-bottom: var(--space-3); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em;">Test Coverage & Outputs</h4>
-            <ul class="service-card-list">
-              <li>Red-team findings mapped to UAE AI Principles, SAMA AI Guidelines, Saudi NDAL framework</li>
+            <h4 class="service-card-dark-heading">Coverage & Outputs:</h4>
+            <ul class="service-card-dark-list">
+              <li>UAE AI Principles, SAMA AI Guidelines mapping</li>
               <li>Model Cards (per NIST standards)</li>
-              <li>Data Protection Impact Assessments (DPIA) aligned with UAE PDPL</li>
-              <li>AI Risk Registers with control recommendations</li>
-              <li>Executive risk briefs for board/regulator presentations</li>
-              <li>SAQ (Self-Assessment Questionnaire) completion support</li>
+              <li>Data Protection Impact Assessments (DPIA)</li>
+              <li>AI Risk Registers with controls</li>
+              <li>Executive risk briefs</li>
+              <li>SAQ completion support</li>
             </ul>
 
-            <p style="font-size: var(--font-size-sm); color: #666;"><strong>Ideal For:</strong> Public-sector tenders, regulated industries (banking, insurance, healthcare), entities preparing for regulatory audits</p>
+            <p class="service-card-dark-ideal"><strong>Ideal For:</strong> Regulated industries, public sector, audit preparation</p>
           </article>
 
           <!-- Service 5: Incident Readiness Workshop -->
-          <article class="service-card" id="workshop">
-            <h2 class="service-card-title">AI Incident Readiness Workshop</h2>
-            <p class="service-card-description">
-              Preparedness training for detection, response, and containment of AI abuse in real-time. Hands-on exercises with your team.
+          <article class="service-card-dark" id="workshop">
+            <h2 class="service-card-dark-title">AI Incident Readiness Workshop</h2>
+            <p class="service-card-dark-description">
+              Preparedness training for detection, response, and containment of AI abuse.
             </p>
 
-            <h4 style="margin-bottom: var(--space-3); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em;">Format</h4>
-            <ul class="service-card-list">
-              <li>Tabletop exercises using real jailbreak scenarios in Arabic and English</li>
-              <li>Role-playing across teams: SOC, legal, product, communication</li>
-              <li>Live demonstration of attack/defense cycles</li>
-              <li>Custom incident playbooks for your industry and AI systems</li>
+            <h4 class="service-card-dark-heading">Format:</h4>
+            <ul class="service-card-dark-list">
+              <li>Tabletop exercises with real jailbreak scenarios</li>
+              <li>Role-playing: SOC, legal, product, comms</li>
+              <li>Live attack/defense demonstrations</li>
+              <li>Custom incident playbooks</li>
             </ul>
 
-            <h4 style="margin-bottom: var(--space-3); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em;">Deliverables</h4>
-            <ul class="service-card-list">
-              <li>Incident response playbook (customized to your environment)</li>
+            <h4 class="service-card-dark-heading">Deliverables:</h4>
+            <ul class="service-card-dark-list">
+              <li>Customized incident response playbook</li>
               <li>Detection rules and monitoring guidance</li>
-              <li>Communication templates for regulators and customers</li>
+              <li>Communication templates</li>
               <li>Team training certificate</li>
             </ul>
 
-            <p style="font-size: var(--font-size-sm); color: #666;"><strong>Ideal For:</strong> Enterprise security teams, government agencies, critical infrastructure operators</p>
+            <p class="service-card-dark-ideal"><strong>Ideal For:</strong> Security teams, government agencies, critical infrastructure</p>
           </article>
 
           <!-- Service 6: Classical ML Security -->
-          <article class="service-card" id="classical-ml">
-            <h2 class="service-card-title">Classical ML Security Assessment</h2>
-            <p class="service-card-description">
-              Security testing for classical machine learning systems (spam classifiers, fraud detectors, recommendation engines, malware scanners).
+          <article class="service-card-dark" id="classical-ml">
+            <h2 class="service-card-dark-title">Classical ML Security Assessment</h2>
+            <p class="service-card-dark-description">
+              Security testing for classical ML systems (fraud detection, recommendations).
             </p>
 
-            <h4 style="margin-bottom: var(--space-3); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em;">Test Coverage</h4>
-            <ul class="service-card-list">
-              <li>Evasion attacks (FGSM, JSMA, adversarial perturbations)</li>
+            <h4 class="service-card-dark-heading">Test Coverage:</h4>
+            <ul class="service-card-dark-list">
+              <li>Evasion attacks (FGSM, JSMA, perturbations)</li>
               <li>Data poisoning and label manipulation</li>
               <li>Model inversion and membership inference</li>
               <li>Feature space manipulation</li>
-              <li>Supply chain vulnerabilities (model registries, dependencies)</li>
+              <li>Supply chain vulnerabilities</li>
             </ul>
 
-            <h4 style="margin-bottom: var(--space-3); font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.05em;">Deliverables</h4>
-            <ul class="service-card-list">
+            <h4 class="service-card-dark-heading">Deliverables:</h4>
+            <ul class="service-card-dark-list">
               <li>Evasion vulnerability report</li>
               <li>Robustness recommendations</li>
               <li>Model hardening guidance</li>
             </ul>
 
-            <p style="font-size: var(--font-size-sm); color: #666;"><strong>Note:</strong> While primary focus is generative AI and LLM systems, we also test classical ML models—particularly those integrated with AI pipelines.</p>
-            <p style="font-size: var(--font-size-sm); color: #666;"><strong>Ideal For:</strong> Organizations with hybrid AI stacks, recommendation platforms, financial risk models</p>
+            <p class="service-card-dark-ideal"><strong>Ideal For:</strong> Hybrid AI stacks, ML platforms, financial risk models</p>
           </article>
         </div>
       </div>
