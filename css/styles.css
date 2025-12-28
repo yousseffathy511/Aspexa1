@@ -1290,8 +1290,8 @@ p {
 }
 
 .team-member-linkedin:hover {
-  background: #0077b5;
-  border-color: #0077b5;
+  background: var(--color-accent-red);
+  border-color: var(--color-accent-red);
   color: var(--color-white);
 }
 
