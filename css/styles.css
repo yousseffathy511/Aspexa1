@@ -1141,62 +1141,85 @@ p {
 .team-leadership-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-6);
+  gap: var(--space-8);
+  justify-items: center;
 }
 
 .team-exec-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-6);
-  max-width: 800px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  justify-items: center;
 }
 
 .team-tech-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: var(--space-5);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  justify-items: center;
 }
 
 /* Team Member Card - Dark Professional */
 .team-member-card {
-  background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+  border: none;
   border-radius: 16px;
-  padding: var(--space-8);
+  padding: var(--space-4);
   text-align: center;
-  transition: border-color 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .team-member-card:hover {
-  border-color: rgba(236, 0, 0, 0.3);
   transform: translateY(-4px);
 }
 
 /* Featured Card (Co-Founders) */
 .team-member-featured {
-  background: linear-gradient(180deg, rgba(236, 0, 0, 0.08) 0%, rgba(236, 0, 0, 0.02) 100%);
-  border-color: rgba(236, 0, 0, 0.2);
+  background: transparent;
 }
 
 .team-member-featured:hover {
-  border-color: rgba(236, 0, 0, 0.5);
+  /* No border change needed */
 }
 
 /* Team Member Image */
 .team-member-image {
-  width: 100px;
-  height: 100px;
+  width: 280px;
+  height: 320px;
   margin: 0 auto var(--space-5);
-  border-radius: 50%;
+  border-radius: 12px;
   overflow: hidden;
   background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  position: relative;
 }
 
 .team-member-featured .team-member-image {
-  width: 120px;
-  height: 120px;
-  border-color: rgba(236, 0, 0, 0.3);
+  width: 280px;
+  height: 320px;
+}
+
+/* Red overlay effect on hover */
+.team-member-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(236, 0, 0, 0.6) 0%, rgba(180, 0, 0, 0.4) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+.team-member-card:hover .team-member-image::after {
+  opacity: 1;
+}
+
+/* Add red glow on hover */
+.team-member-card:hover .team-member-image {
+  box-shadow: 0 0 30px rgba(236, 0, 0, 0.4), 0 0 60px rgba(236, 0, 0, 0.2);
 }
 
 .team-member-placeholder {
@@ -1213,11 +1236,12 @@ p {
   height: 100%;
   object-fit: cover;
   filter: grayscale(100%);
-  transition: filter var(--transition-base);
+  transition: filter var(--transition-base), transform var(--transition-base);
 }
 
 .team-member-card:hover .team-member-image img {
   filter: grayscale(0%);
+  transform: scale(1.05);
 }
 
 /* Team Member Info */
@@ -1240,9 +1264,10 @@ p {
 
 .team-member-role {
   font-size: var(--font-size-sm);
-  color: var(--color-text-light);
+  color: var(--color-accent-red);
   margin-bottom: var(--space-4);
   line-height: 1.4;
+  font-weight: 500;
 }
 
 .team-member-featured .team-member-role {
@@ -1645,6 +1670,10 @@ p {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .team-exec-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .team-tech-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1698,18 +1727,26 @@ p {
 
   .team-leadership-grid {
     grid-template-columns: 1fr;
-    max-width: 400px;
+    max-width: 320px;
     margin: 0 auto;
   }
 
   .team-exec-grid {
     grid-template-columns: 1fr;
-    max-width: 400px;
+    max-width: 320px;
     margin: 0 auto;
   }
 
   .team-tech-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .team-member-image {
+    width: 100%;
+    max-width: 280px;
+    height: 300px;
   }
 
   .footer-grid {
@@ -1780,8 +1817,14 @@ p {
 
   .team-tech-grid {
     grid-template-columns: 1fr;
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
+  }
+
+  .team-member-image {
+    width: 100%;
+    max-width: 260px;
+    height: 280px;
   }
 
   .location-grid {
